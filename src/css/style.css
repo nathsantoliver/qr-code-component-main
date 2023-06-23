@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+main {
+    max-width: 1440px;
+    min-height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--white);
+    width: 305px;
+    height: 475px;
+    border-radius: 18px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card .text-box {
+    text-align: center;
+    padding: 15px;
+}
+
+.card .text-box .title {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card .text-box .description {
+    color: var(--grayish-blue);
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 5px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
